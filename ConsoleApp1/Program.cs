@@ -5,7 +5,7 @@ namespace Primeiro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test Visual Studio");
+            Console.WriteLine("Test Visual Studio 2");
         }
     }
 }
