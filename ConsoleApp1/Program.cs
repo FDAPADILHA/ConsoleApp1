@@ -39,6 +39,12 @@ namespace Primeiro
             Console.WriteLine(x.ToString("F2")); //Aqui está saindo com vírgula por causa da linguagem do Visual Studio em pt-br
 
             //Se quiser que saia com "." na quebra de casa decimal então eu preciso importar a bb using System.Globalization
+            Console.WriteLine(x.ToString("F2", CultureInfo.InvariantCulture));
+
+            //Como concatenar os elementos
+            Console.WriteLine("Troco do pedido é: " + "R$" + x.ToString("F2", CultureInfo.InvariantCulture));
+
+            Console.ReadLine();
         }
     }
 }
