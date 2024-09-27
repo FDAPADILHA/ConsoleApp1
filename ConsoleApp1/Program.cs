@@ -44,6 +44,24 @@ namespace Primeiro
             //Como concatenar os elementos
             Console.WriteLine("Troco do pedido é: " + "R$" + x.ToString("F2", CultureInfo.InvariantCulture));
 
+            //Conceito de Casting: Para você definir no C# que precisa converter a variável
+            int a;
+            double b;
+            b = 5.0;
+            a = (int) b;
+
+            Console.WriteLine("\n" + "Casting para INT (de DOUBLE para INT): " + a);
+
+            //Casting de int para double
+            int c;
+            double r;
+            c = 2;
+            a = 5;
+            //O casting vai antes da operação de divisão
+            r = (double) a / c;
+
+            Console.WriteLine("\n" + "Casting para double (de int para double): " + r);
+
             Console.ReadLine();
         }
     }
