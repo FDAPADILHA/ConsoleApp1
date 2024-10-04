@@ -62,7 +62,48 @@ namespace Primeiro
 
             Console.WriteLine("\n" + "Casting para double (de int para double): " + r);
 
-            Console.ReadLine();
+            //Comando para entrada de dados
+            string frase = Console.ReadLine();
+
+            Console.WriteLine("Você digitou: " + frase);
+
+            //Entrada de dados com vetor string comando split para a cada espaço gravar no vetor "vet"
+            string s = Console.ReadLine();
+            string[] vet = s.Split(' ');
+            string p0 = vet[0];
+            string p1 = vet[1];
+            string p2 = vet[2];
+            //Para imprimir igual eu preciso colocar cada posição do vetor que guardou a informação
+            Console.WriteLine("Você escreveu a frase: " + p0 + " " + p1 + " " + p2);
+
+            //Para fazer uma entrada como número inteiro: Fazer a conversão com Parse
+            int n1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Você colocou o número inteiro: " + n1);
+            //Log de erro se a entrada for string numa variável int:
+            /*Unhandled exception. System.FormatException: The input string 'a' was not in a correct format.
+            at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+            at System.Int32.Parse(String s)
+            at Primeiro.Program.Main(String[] args) in C:\Users\filipe.padilha\source\repos\ConsoleApp1\ConsoleApp1\Program.cs:line 80*/
+
+            //Outras conversões para salvar em variável:
+
+            char c1 = char.Parse(Console.ReadLine());
+
+            Console.WriteLine("Você digitou o char: " + c);
+
+            double d = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Você digitou o double: " + d);
+
+            //e também em vetor:
+            string[] vet2 = Console.ReadLine().Split(' ');
+            string nome = vet[0];
+            char idade = char.Parse(vet[1]);
+            int numSorte = int.Parse(vet[2]);
+            double salario = double.Parse(vet[3]);
+
+            Console.WriteLine("Suas informações: " + "Nome: " + nome + "\nIdade: " + idade + "\nNúmero da Sorte: " + numSorte + "\nSalário: R$" + salario);
+
         }
     }
 }
